@@ -179,6 +179,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "proj.gm.desc": "This project was developed by a team of six as part of a capstone course in partnership with General Motors. We built a full stack analytics platform that processed over 30 million public policy records and integrated an AI powered summarization engine to condense lengthy documents into clear short descriptions. Our work was later presented to 150+ GM EDI leaders and data engineers, where it received strong feedback for its innovation and practical value.",
       "skills.title": "SKILLS",
       "skills.jp": "スキル",
+      "experience.title": "EXPERIENCE",
+      "experience.jp": "経験",
+      "exp.costco": `<li>Adapted quickly to surges, scaling prep and service processes to meet increased customer demand without sacrificing quality.</li>
+        <li>Managed time sensitive production under pressure, prioritizing tasks to keep the line moving during the busiest hours.</li>
+        <li>Managed high volume rotisserie production, preparing up to 80 chickens per shift while maintaining strict quality and timing standards.</li>`,
+      "exp.jimmy": `<li>Maintained positive customer relationships by demonstrating strong communication and problem solving skills during peak hours.</li>
+        <li>Optimized sandwich assembly proccess to ensure consistently quick order completions while maintaining quality standards.</li>
+        <li>Trained multiple employees in food preperation, saftey protocols, and customer service standards.</li>`,
       "footer.line1": "DESIGNED & BUILT BY <span>REI PULLUM</span> // 2026",
     },
     ja: {
@@ -210,6 +218,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "proj.gm.desc": "本プロジェクトは、ゼネラルモーターズ（GM）社との提携によるキャップストーン・プログラムの一環として、6名のチームで開発いたしました。3,000万件以上の公的政策データを処理するフルスタックの分析プラットフォームを構築し、AIを活用した要約エンジンを統合することで、膨大な文書を簡潔で明快な記述に凝縮する機能を実装いたしました。本成果は、GM社のEDIリーダーやデータエンジニアを含む150名以上の前で発表を行い、その革新性と実用性において高い評価をいただきました。",
       "skills.title": "スキル",
       "skills.jp": "スキル",
+      "experience.title": "経験",
+      "experience.jp": "経験",
+      "exp.costco": `<li>需要の急増に迅速に対応し、準備およびサービス工程を効率的にスケールさせることで、品質を維持しつつ業務を完遂いたしました。</li>
+        <li>時間制約のある生産業務をプレッシャー下で管理し、繁忙期においても優先順位を的確に判断してラインの稼働を維持いたしました。</li>
+        <li>高ボリュームのロティサリー調理を管理し、1シフトあたり最大80羽の調理を厳格な品質基準と時間制限のもとで担当いたしました。</li>`,
+      "exp.jimmy": `<li>ピーク時においても、的確なコミュニケーションと問題解決能力を発揮し、良好な顧客関係の維持に努めました。</li>
+        <li>サンドイッチの調理工程を最適化し、迅速な提供と品質維持を両立させる仕組みを構築いたしました。</li>
+        <li>複数の従業員に対し、食材準備、安全プロトコル、および接客基準に関するトレーニングを担当いたしました。</li>`,
       "footer.line1": "DESIGNED & BUILT BY <span>REI PULLUM</span> // 2026",
     },
   };
