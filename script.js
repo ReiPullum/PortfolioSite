@@ -177,6 +177,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "proj.portfolio.desc": "I built this portfolio from scratch using HTML, CSS, and JavaScript to showcase my frontend craftsmanship and document my growth. It's a place where I experiment with modern web design, responsive layouts, and interactive UI patterns while prioritizing accessibility and performance.",
       "proj.gm.name": "PPA Project — General Motors",
       "proj.gm.desc": "This project was developed by a team of six as part of a capstone course in partnership with General Motors. We built a full stack analytics platform that processed over 30 million public policy records and integrated an AI powered summarization engine to condense lengthy documents into clear short descriptions. Our work was later presented to 150+ GM EDI leaders and data engineers, where it received strong feedback for its innovation and practical value.",
+      "skills.title": "SKILLS",
+      "skills.jp": "スキル",
       "footer.line1": "DESIGNED & BUILT BY <span>REI PULLUM</span> // 2026",
     },
     ja: {
@@ -206,6 +208,8 @@ document.addEventListener("DOMContentLoaded", () => {
       "proj.portfolio.desc": "本ポートフォリオは、フロントエンドにおける技術力と自身の成長を形にするため、HTML、CSS、JavaScriptを用いて一から構築いたしました。アクセシビリティやパフォーマンスを最優先に考慮しつつ、モダンなウェブデザイン、レスポンシブレイアウト、そしてインタラクティブなUIパターンの探求を実践する場として活用しております。",
       "proj.gm.name": "PPA Project — General Motors",
       "proj.gm.desc": "本プロジェクトは、ゼネラルモーターズ（GM）社との提携によるキャップストーン・プログラムの一環として、6名のチームで開発いたしました。3,000万件以上の公的政策データを処理するフルスタックの分析プラットフォームを構築し、AIを活用した要約エンジンを統合することで、膨大な文書を簡潔で明快な記述に凝縮する機能を実装いたしました。本成果は、GM社のEDIリーダーやデータエンジニアを含む150名以上の前で発表を行い、その革新性と実用性において高い評価をいただきました。",
+      "skills.title": "スキル",
+      "skills.jp": "スキル",
       "footer.line1": "DESIGNED & BUILT BY <span>REI PULLUM</span> // 2026",
     },
   };
