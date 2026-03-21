@@ -163,12 +163,20 @@ document.addEventListener("DOMContentLoaded", () => {
       "cta.view": "VIEW PROJECTS",
       "cta.contact": "CONTACT ME",
       "about.title": "ABOUT",
-      "about.jp": "概要",
+      "about.jp": "について",
       "about.text": `<p>Hey, I'm <strong style="color:var(--cyan)">Jonathan</strong>, but most people call me <strong style="color:#b94fff">Rei</strong>. I'm currently looking for opportunities where I can expand my knowledge and continue developing my skills. I enjoy collaborating with others, exploring new tools, and taking on projects that push me to grow. I'm always open to feedback on my work and interested in hearing ideas for future projects that will challenge me and help me improve.</p>`,
       "about.langsLabel": "LANGUAGES",
       "about.langsSub": "Spoken languages",
       "about.lang1": "English",
       "about.lang2": "Japanese",
+      "projects.title": "PROJECTS",
+      "projects.jp": "プロジェクト",
+      "proj.code": "CODE",
+      "proj.preview": "PREVIEW",
+      "proj.portfolio.name": "Portfolio Website",
+      "proj.portfolio.desc": "I built this portfolio from scratch using HTML, CSS, and JavaScript to showcase my frontend craftsmanship and document my growth. It's a place where I experiment with modern web design, responsive layouts, and interactive UI patterns while prioritizing accessibility and performance.",
+      "proj.gm.name": "PPA Project — General Motors",
+      "proj.gm.desc": "This project was developed by a team of six as part of a capstone course in partnership with General Motors. We built a full stack analytics platform that processed over 30 million public policy records and integrated an AI powered summarization engine to condense lengthy documents into clear short descriptions. Our work was later presented to 150+ GM EDI leaders and data engineers, where it received strong feedback for its innovation and practical value.",
       "footer.line1": "DESIGNED & BUILT BY <span>REI PULLUM</span> // 2026",
     },
     ja: {
@@ -190,6 +198,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "about.langsSub": "対応言語",
       "about.lang1": "英語",
       "about.lang2": "日本語",
+      "projects.title": "プロジェクト",
+      "projects.jp": "プロジェクト",
+      "proj.code": "ソースコードを表示",
+      "proj.preview": "プレビュー",
+      "proj.portfolio.name": "Portfolio Website",
+      "proj.portfolio.desc": "本ポートフォリオは、フロントエンドにおける技術力と自身の成長を形にするため、HTML、CSS、JavaScriptを用いて一から構築いたしました。アクセシビリティやパフォーマンスを最優先に考慮しつつ、モダンなウェブデザイン、レスポンシブレイアウト、そしてインタラクティブなUIパターンの探求を実践する場として活用しております。",
+      "proj.gm.name": "PPA Project — General Motors",
+      "proj.gm.desc": "本プロジェクトは、ゼネラルモーターズ（GM）社との提携によるキャップストーン・プログラムの一環として、6名のチームで開発いたしました。3,000万件以上の公的政策データを処理するフルスタックの分析プラットフォームを構築し、AIを活用した要約エンジンを統合することで、膨大な文書を簡潔で明快な記述に凝縮する機能を実装いたしました。本成果は、GM社のEDIリーダーやデータエンジニアを含む150名以上の前で発表を行い、その革新性と実用性において高い評価をいただきました。",
       "footer.line1": "DESIGNED & BUILT BY <span>REI PULLUM</span> // 2026",
     },
   };
@@ -235,4 +251,56 @@ document.addEventListener("DOMContentLoaded", () => {
       setLanguage(next);
     });
   }
+
+  // Create modal and append to body
+  let previewModal = document.getElementById("preview-modal");
+  if (!previewModal) {
+    previewModal = document.createElement("div");
+    previewModal.id = "preview-modal";
+    previewModal.innerHTML = `
+      <div class="modal-inner" role="dialog" aria-modal="true">
+        <button class="modal-close" aria-label="Close preview">BACK</button>
+        <img src="" alt="Preview image" />
+      </div>
+    `;
+    document.body.appendChild(previewModal);
+  }
+
+  const modalImg = previewModal.querySelector("img");
+
+  function openPreviewModal(url, alt = "Preview image") {
+    if (!modalImg) return;
+    modalImg.src = url;
+    modalImg.alt = alt;
+    previewModal.classList.add("show");
+    document.body.style.overflow = "hidden";
+  }
+
+  function closePreviewModal() {
+    previewModal.classList.remove("show");
+    if (modalImg) modalImg.src = "";
+    document.body.style.overflow = "";
+  }
+
+  document.addEventListener("click", (e) => {
+    const previewBtn = e.target.closest(".preview-btn");
+    if (previewBtn) {
+      const full = previewBtn.dataset.full;
+      if (full) openPreviewModal(full);
+      return;
+    }
+    if (e.target.closest(".modal-close")) {
+      closePreviewModal();
+      return;
+    }
+  });
+
+  previewModal.addEventListener("click", (e) => {
+    if (e.target === previewModal) closePreviewModal();
+  });
+
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && previewModal.classList.contains("show"))
+      closePreviewModal();
+  });
 });
