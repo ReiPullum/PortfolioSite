@@ -187,6 +187,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "exp.jimmy": `<li>Maintained positive customer relationships by demonstrating strong communication and problem solving skills during peak hours.</li>
         <li>Optimized sandwich assembly proccess to ensure consistently quick order completions while maintaining quality standards.</li>
         <li>Trained multiple employees in food preperation, saftey protocols, and customer service standards.</li>`,
+      "college.title": "COLLEGE",
+      "college.jp": "大学",
+      "college.text": `<p><strong style="color:#b94fff">Bachelor of Science in Computer Science</strong> — <em>Wayne State University</em></p>
+        <p>Graduated December 2024. Through active involvment in all three clubs, I worked alongside students from diverse backgrounds, gaining valuable experience in community engagement and strengthening my communication skills.</p>
+        <p>Highlights: Working with a team of six alongside General Motors on a Public Policy Analytics capstone, where I integrated an AI based summarization engine capable of processing 100,000 word documents down to a 1-2 paragraph summary.</p>`,
+      "contact.title": "CONTACT",
+      "contact.jp": "お問い合わせ",
+      "contact.text": `<span class="big">FEEL FREE <br>TO REACH OUT.</span> Open to full-time roles, internships, and part-time roles. Always looking forward to connecting.`,
       "footer.line1": "DESIGNED & BUILT BY <span>REI PULLUM</span> // 2026",
     },
     ja: {
@@ -226,6 +234,14 @@ document.addEventListener("DOMContentLoaded", () => {
       "exp.jimmy": `<li>ピーク時においても、的確なコミュニケーションと問題解決能力を発揮し、良好な顧客関係の維持に努めました。</li>
         <li>サンドイッチの調理工程を最適化し、迅速な提供と品質維持を両立させる仕組みを構築いたしました。</li>
         <li>複数の従業員に対し、食材準備、安全プロトコル、および接客基準に関するトレーニングを担当いたしました。</li>`,
+      "college.title": "大学",
+      "college.jp": "大学",
+      "college.text": `<p><strong style="color:#b94fff">コンピュータサイエンス学士</strong> — <em>Wayne State University</em></p>
+        <p>2024年12月に卒業しました。3つのクラブ活動を通じて、多様なバックグラウンドの学生と協働し、コミュニティ活動やコミュニケーション能力を磨きました。</p>
+        <p>ハイライト：General Motors と共同で取り組んだ Public Policy Analytics のキャップストーンで、AIベースの要約エンジンを統合し、長文ドキュメントを1〜2段落に凝縮する仕組みを実装しました。</p>`,
+      "contact.title": "お問い合わせ",
+      "contact.jp": "お問い合わせ",
+      "contact.text": `<span class="big">いつでもお気軽にお問い合わせください。</span> 私は現在、正社員、インターンシップ、ならびにパートタイムでの機会を幅広く探しております。皆様との新たなつながりを持てることを、心より楽しみにしております。`,
       "footer.line1": "DESIGNED & BUILT BY <span>REI PULLUM</span> // 2026",
     },
   };
