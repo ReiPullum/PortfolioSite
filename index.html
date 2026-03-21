@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rei's Portfolio Website</title>
+
+  <!-- External CSS Reference -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Google Font Reference -->
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Noto+Sans+JP:wght@300;400;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="cursor-glow"></div>
+<canvas id="rain"></canvas>
+<div class="kanji-bg" id="kanji-bg"></div>
+
+<!-- City SVG Reference -->
+<svg id="city" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice">
+  <defs>
+    <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#b94fff" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#05020f" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Buildings Reference -->
+  <rect x="0" y="180" width="60" height="140" fill="url(#cg)"/>
+  <rect x="20" y="140" width="25" height="180" fill="url(#cg)"/>
+  <rect x="70" y="200" width="80" height="120" fill="url(#cg)"/>
+  <rect x="160" y="130" width="50" height="190" fill="url(#cg)"/>
+  <rect x="175" y="100" width="20" height="230" fill="url(#cg)"/>
+  <rect x="220" y="170" width="70" height="150" fill="url(#cg)"/>
+  <rect x="300" y="150" width="40" height="170" fill="url(#cg)"/>
+  <rect x="310" y="110" width="15" height="210" fill="url(#cg)"/>
+  <rect x="350" y="190" width="90" height="130" fill="url(#cg)"/>
+  <rect x="450" y="120" width="60" height="200" fill="url(#cg)"/>
+  <rect x="460" y="80" width="20" height="240" fill="url(#cg)"/>
+  <rect x="520" y="160" width="55" height="160" fill="url(#cg)"/>
+  <rect x="590" y="140" width="80" height="180" fill="url(#cg)"/>
+  <rect x="610" y="100" width="25" height="220" fill="url(#cg)"/>
+  <rect x="680" y="170" width="50" height="150" fill="url(#cg)"/>
+  <rect x="740" y="130" width="70" height="190" fill="url(#cg)"/>
+  <rect x="755" y="90" width="20" height="230" fill="url(#cg)"/>
+  <rect x="820" y="160" width="60" height="160" fill="url(#cg)"/>
+  <rect x="890" y="140" width="45" height="180" fill="url(#cg)"/>
+  <rect x="945" y="170" width="80" height="150" fill="url(#cg)"/>
+  <rect x="1030" y="120" width="55" height="200" fill="url(#cg)"/>
+  <rect x="1050" y="80" width="18" height="240" fill="url(#cg)"/>
+  <rect x="1095" y="155" width="70" height="165" fill="url(#cg)"/>
+  <rect x="1170" y="135" width="50" height="185" fill="url(#cg)"/>
+  <rect x="1230" y="165" width="85" height="155" fill="url(#cg)"/>
+  <rect x="1320" y="150" width="60" height="170" fill="url(#cg)"/>
+  <rect x="1385" y="175" width="55" height="145" fill="url(#cg)"/>
+
+  <!-- Neon Windows Reference -->
+  <rect x="178" y="130" width="5" height="5" fill="#00f5ff" opacity="0.8"/>
+  <rect x="165" y="115" width="5" height="5" fill="#b94fff" opacity="0.9"/>
+  <rect x="313" y="125" width="5" height="5" fill="#b94fff" opacity="0.9"/>
+  <rect x="462" y="95" width="5" height="5" fill="#ffd700" opacity="0.8"/>
+  <rect x="613" y="115" width="5" height="5" fill="#00f5ff" opacity="0.8"/>
+  <rect x="758" y="105" width="5" height="5" fill="#b94fff" opacity="0.7"/>
+  <rect x="1053" y="95" width="5" height="5" fill="#00f5ff" opacity="0.8"/>
+  <rect x="1253" y="140" width="5" height="5" fill="#b94fff" opacity="0.9"/>
+</svg>
+
+<!-- Navigation Bar -->
+<nav>
+  <div class="nav-logo">JONATHAN<span> </span>REI<span> </span>PULLUM</div>
+  <div class="nav-links">
+    <a href="#about" data-dict="nav.about"></a>
+    <a href="#projects" data-dict="nav.projects"></a>
+    <a href="#skills" data-dict="nav.skills"></a>
+    <a href="#experience" data-dict="nav.experience"></a>
+    <a href="#college" data-dict="nav.college"></a>
+    <a href="#contact" data-dict="nav.contact"></a>
+  </div>
+
+  <!-- Translate Button -->
+  <button id="translate-btn" class="translate-btn" aria-label="Toggle language">日本語</button>
+</nav>
+
+<main>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="jp-subtitle" data-dict="hero.subtitle">プログラマー ／ ソフトウェアエンジニア</div>
+    <h1 class="hero-name" style="color: var(--cyan); text-shadow: var(--glow-cyan);">JONATHAN</h1>
+    <h1 class="hero-name"><span class="accent">REI</span><br>PULLUM</h1>
+    <div class="hero-role"><span id="typed-role"></span><span class="cursor-blink"></span></div>
+    <p class="hero-tagline" data-dict="hero.tagline">
+      Thank you for spending the time to check out my portfolio! I'm a passionate software engineer who is willing to expand my skillset and take on new challenges.
+      <span class="jp" data-dict="hero.jp">未来をコードで作る ─ 美しいソフトウェアへの情熱</span>
+    </p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn" data-dict="cta.view">VIEW WORK</a>
+      <a href="#contact" class="btn btn-cyan" data-dict="cta.contact">CONTACT ME</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div data-dict="footer.line1"></div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
