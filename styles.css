@@ -386,3 +386,36 @@ footer span { color: var(--purple); }
 @media (max-width: 480px) {
   .code-btn { padding: 0.45rem 0.9rem; font-size: 0.72rem; gap: 0.4rem; }
 }
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--purple);
+  font-size: 1.5rem;
+  cursor: pointer;
+  position: absolute;
+  right: 5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 1250px) {
+  .nav-logo { left: 1rem; font-size: 0.75rem; letter-spacing: 1px; }
+  .translate-btn { right: 1rem; }
+  .hamburger { right: 6.5rem; }
+  .hamburger { display: block; }
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0; right: 0;
+    background: rgba(5,2,15,0.97);
+    padding: 1rem 2rem;
+    border-bottom: 1px solid var(--purple-dim);
+    gap: 1rem;
+  }
+  .nav-links.open { display: flex; }
+  .nav-links a { font-size: 0.8rem; }
+}

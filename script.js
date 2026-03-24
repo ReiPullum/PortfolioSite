@@ -339,4 +339,15 @@ document.addEventListener("DOMContentLoaded", () => {
     if (e.key === "Escape" && previewModal.classList.contains("show"))
       closePreviewModal();
   });
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+if (hamburger && navLinks) {
+  hamburger.addEventListener("click", () => {
+    navLinks.classList.toggle("open");
+  });
+  navLinks.querySelectorAll("a").forEach(link => {
+    link.addEventListener("click", () => navLinks.classList.remove("open"));
+  });
+}
 });
