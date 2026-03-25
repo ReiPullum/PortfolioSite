@@ -76,7 +76,7 @@ nav {
 
 .translate-btn {
   position: absolute;
-  right: 2.5rem;
+  right: 1rem;
   top: 50%;
   transform: translateY(-50%);
   z-index: 101;
@@ -368,9 +368,8 @@ section { padding: 5rem 0 2rem; }
 footer {
   position: relative; z-index: 1; text-align: center;
   padding: 2rem; border-top: 1px solid #2a1545;
-  font-size: 0.7rem; color: #4a2570; letter-spacing: 3px;
+  font-size: 0.7rem; color: var(--purple); letter-spacing: 3px;
 }
-footer span { color: var(--purple); }
 
 @media (max-width: 680px) {
   .about-grid, .contact-wrapper { grid-template-columns: 1fr; }
@@ -402,8 +401,8 @@ footer span { color: var(--purple); }
 
 @media (max-width: 1250px) {
   .nav-logo { left: 1rem; font-size: 0.75rem; letter-spacing: 1px; }
-  .translate-btn { right: 1rem; }
-  .hamburger { right: 6.5rem; }
+  .translate-btn { right: 3.2rem; }
+  .hamburger { right: 1rem; }
   .hamburger { display: block; }
   .nav-links {
     display: none;

@@ -195,7 +195,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "contact.title": "CONTACT",
       "contact.jp": "お問い合わせ",
       "contact.text": `<span class="big">FEEL FREE <br>TO REACH OUT.</span> Open to full-time roles, internships, and part-time roles. Always looking forward to connecting.`,
-      "footer.line1": "DESIGNED & BUILT BY <span>REI PULLUM</span> // 2026",
+      "footer.line1": "DESIGNED & BUILT BY REI PULLUM // 2026",
     },
     ja: {
       "nav.about": "概要",
@@ -242,7 +242,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "contact.title": "お問い合わせ",
       "contact.jp": "お問い合わせ",
       "contact.text": `<span class="big">いつでもお気軽にお問い合わせください。</span> 私は現在、正社員、インターンシップ、ならびにパートタイムでの機会を幅広く探しております。皆様との新たなつながりを持てることを、心より楽しみにしております。`,
-      "footer.line1": "DESIGNED & BUILT BY <span>REI PULLUM</span> // 2026",
+      "footer.line1": "DESIGNED & BUILT BY REI PULLUM // 2026",
     },
   };
 
