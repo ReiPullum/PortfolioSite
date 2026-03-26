@@ -258,9 +258,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }
 
-  const urlLang = new URLSearchParams(window.location.search).get('lang');
+const urlLang = new URLSearchParams(window.location.search).get('lang');
+  const validLangs = ["en", "ja"];
+
+  if (urlLang && !validLangs.includes(urlLang)) {
+    const fallback = localStorage.getItem("site_lang") || "en";
+    history.replaceState(null, '', '?lang=' + fallback);
+  }
+
   const savedLang =
-    urlLang ||
+    (validLangs.includes(urlLang) ? urlLang : null) ||
     localStorage.getItem("site_lang") ||
     (navigator.language && navigator.language.startsWith("ja") ? "ja" : "en");
   setLanguage(savedLang);
