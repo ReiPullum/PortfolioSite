@@ -2,8 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0; url=https://reipullum.com/" />
   <title>Redirecting...</title>
+  <script>
+    const lang = localStorage.getItem("site_lang") || "en";
+    window.location.replace("https://reipullum.com/?lang=" + lang);
+  </script>
 </head>
 <body></body>
 </html>
