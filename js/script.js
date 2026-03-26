@@ -159,18 +159,15 @@ document.addEventListener("DOMContentLoaded", () => {
       "nav.contact": "CONTACT",
       "hero.subtitle": "プログラマー ／ ソフトウェアエンジニア",
       "hero.tagline": "Thank you for spending the time to check out my portfolio. Feel free to contact me and chat anytime!",
-      "hero.jp": "未来をコードで作る ─ 美しいソフトウェアへの情熱",
       "cta.view": "VIEW PROJECTS",
       "cta.contact": "CONTACT ME",
       "about.title": "ABOUT",
-      "about.jp": "について",
       "about.text": `<p>Hey, I'm <strong style="color:var(--cyan)">Jonathan</strong>, but most people call me <strong style="color:#b94fff">Rei</strong>. I'm currently looking for opportunities where I can expand my knowledge and continue developing my skills. I enjoy collaborating with others, exploring new tools, and taking on projects that push me to grow. I'm always open to feedback on my work and interested in hearing ideas for future projects that will challenge me and help me improve.</p>`,
       "about.langsLabel": "LANGUAGES",
       "about.langsSub": "Spoken languages",
       "about.lang1": "English",
       "about.lang2": "Japanese",
       "projects.title": "PROJECTS",
-      "projects.jp": "プロジェクト",
       "proj.code": "CODE",
       "proj.preview": "PREVIEW",
       "proj.portfolio.name": "Portfolio Website",
@@ -178,9 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "proj.gm.name": "PPA Project — General Motors",
       "proj.gm.desc": "This project was developed by a team of six as part of a capstone course in partnership with General Motors. We built a full stack analytics platform that processed over 30 million public policy records and integrated an AI powered summarization engine to condense lengthy documents into clear short descriptions. Our work was later presented to 150+ GM EDI leaders and data engineers, where it received strong feedback for its innovation and practical value.",
       "skills.title": "SKILLS",
-      "skills.jp": "スキル",
       "experience.title": "EXPERIENCE",
-      "experience.jp": "経験",
       "exp.costco": `<li>Adapted quickly to surges, scaling prep and service processes to meet increased customer demand without sacrificing quality.</li>
         <li>Managed time sensitive production under pressure, prioritizing tasks to keep the line moving during the busiest hours.</li>
         <li>Managed high volume rotisserie production, preparing up to 80 chickens per shift while maintaining strict quality and timing standards.</li>`,
@@ -188,12 +183,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <li>Optimized sandwich assembly proccess to ensure consistently quick order completions while maintaining quality standards.</li>
         <li>Trained multiple employees in food preperation, saftey protocols, and customer service standards.</li>`,
       "college.title": "COLLEGE",
-      "college.jp": "大学",
       "college.text": `<p><strong style="color:#b94fff">Bachelor of Science in Computer Science</strong> — <em>Wayne State University</em></p>
         <p>Graduated December 2024. Through active involvment in all three clubs, I worked alongside students from diverse backgrounds, gaining valuable experience in community engagement and strengthening my communication skills.</p>
         <p>Highlights: Working with a team of six alongside General Motors on a Public Policy Analytics capstone, where I integrated an AI based summarization engine capable of processing 100,000 word documents down to a 1-2 paragraph summary.</p>`,
       "contact.title": "CONTACT",
-      "contact.jp": "お問い合わせ",
       "contact.text": `<span class="big">FEEL FREE <br>TO REACH OUT.</span> Open to full-time roles, internships, and part-time roles. Always looking forward to connecting.`,
       "footer.line1": "DESIGNED & BUILT BY REI PULLUM // 2026",
     },
@@ -206,18 +199,15 @@ document.addEventListener("DOMContentLoaded", () => {
       "nav.contact": "お問い合わせ",
       "hero.subtitle": "プログラマー ／ ソフトウェアエンジニア",
       "hero.tagline": "お忙しい中、ポートフォリオをご高覧いただき誠にありがとうございます。ご質問やご相談などございましたら、いつでもお気軽にお問い合わせください。",
-      "hero.jp": "未来をコードで作る ─ 美しいソフトウェアへの情熱",
       "cta.view": "開発実績を見る",
       "cta.contact": "お問い合わせ",
       "about.title": "概要",
-      "about.jp": "概要",
       "about.text": `<p>こんにちは、<strong style="color:var(--cyan)">ジョナサン</strong> と申します。周囲からは <strong style="color:#b94fff">レイ</strong> と呼ばれております。現在は、知識を深め、自身のスキルをさらに磨き続けることができる機会を探しております。他者との協力を大切にし、最新のツールを積極的に取り入れながら、自己成長に繋がる挑戦的なプロジェクトに取り組むことに強い意欲を持っております。また、自身の成果物に対するフィードバックを真摯に受け入れるとともに、さらなる改善や成長に繋がる、やりがいのある次なるプロジェクトへのアイデアやご提案もぜひお伺いしたいと考えております。</p>`,
       "about.langsLabel": "語学",
       "about.langsSub": "対応言語",
       "about.lang1": "英語",
       "about.lang2": "日本語",
       "projects.title": "プロジェクト",
-      "projects.jp": "プロジェクト",
       "proj.code": "ソースコードを表示",
       "proj.preview": "プレビュー",
       "proj.portfolio.name": "Portfolio Website",
@@ -225,9 +215,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "proj.gm.name": "PPA Project — General Motors",
       "proj.gm.desc": "本プロジェクトは、ゼネラルモーターズ（GM）社との提携によるキャップストーン・プログラムの一環として、6名のチームで開発いたしました。3,000万件以上の公的政策データを処理するフルスタックの分析プラットフォームを構築し、AIを活用した要約エンジンを統合することで、膨大な文書を簡潔で明快な記述に凝縮する機能を実装いたしました。本成果は、GM社のEDIリーダーやデータエンジニアを含む150名以上の前で発表を行い、その革新性と実用性において高い評価をいただきました。",
       "skills.title": "スキル",
-      "skills.jp": "スキル",
       "experience.title": "経験",
-      "experience.jp": "経験",
       "exp.costco": `<li>需要の急増に迅速に対応し、準備およびサービス工程を効率的にスケールさせることで、品質を維持しつつ業務を完遂いたしました。</li>
         <li>時間制約のある生産業務をプレッシャー下で管理し、繁忙期においても優先順位を的確に判断してラインの稼働を維持いたしました。</li>
         <li>高ボリュームのロティサリー調理を管理し、1シフトあたり最大80羽の調理を厳格な品質基準と時間制限のもとで担当いたしました。</li>`,
@@ -235,12 +223,10 @@ document.addEventListener("DOMContentLoaded", () => {
         <li>サンドイッチの調理工程を最適化し、迅速な提供と品質維持を両立させる仕組みを構築いたしました。</li>
         <li>複数の従業員に対し、食材準備、安全プロトコル、および接客基準に関するトレーニングを担当いたしました。</li>`,
       "college.title": "大学",
-      "college.jp": "大学",
       "college.text": `<p><strong style="color:#b94fff">コンピュータサイエンス学士</strong> — <em>Wayne State University</em></p>
         <p>2024年12月に卒業しました。3つのクラブ活動を通じて、多様なバックグラウンドの学生と協働し、コミュニティ活動やコミュニケーション能力を磨きました。</p>
         <p>ハイライト：General Motors と共同で取り組んだ Public Policy Analytics のキャップストーンで、AIベースの要約エンジンを統合し、長文ドキュメントを1〜2段落に凝縮する仕組みを実装しました。</p>`,
       "contact.title": "お問い合わせ",
-      "contact.jp": "お問い合わせ",
       "contact.text": `<span class="big">いつでもお気軽にお問い合わせください。</span> 私は現在、正社員、インターンシップ、ならびにパートタイムでの機会を幅広く探しております。皆様との新たなつながりを持てることを、心より楽しみにしております。`,
       "footer.line1": "DESIGNED & BUILT BY REI PULLUM // 2026",
     },
