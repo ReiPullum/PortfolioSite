@@ -48,6 +48,7 @@ nav {
   background: rgba(5,2,15,0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--purple-dim);
+  overflow: visible;
 }
 
 .nav-logo {
@@ -388,33 +389,71 @@ footer {
 
 .hamburger {
   display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
   background: none;
   border: none;
-  color: var(--purple);
-  font-size: 1.5rem;
   cursor: pointer;
   position: absolute;
   right: 5rem;
   top: 50%;
   transform: translateY(-50%);
+  padding: 0;
+  z-index: 200;
+  overflow: visible;
+}
+
+.bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--purple);
+  border-radius: 2px;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  transform-origin: center;
+}
+
+.hamburger.open .bar1 {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger.open .bar2 {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.hamburger.open .bar3 {
+  transform: translateY(-9px) rotate(-45deg);
 }
 
 @media (max-width: 1250px) {
   .nav-logo { left: 1rem; font-size: 0.75rem; letter-spacing: 1px; }
-  .translate-btn { right: 3.2rem; }
-  .hamburger { right: 1rem; }
-  .hamburger { display: block; }
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 100%;
-    left: 0; right: 0;
-    background: rgba(5,2,15,0.97);
-    padding: 1rem 2rem;
-    border-bottom: 1px solid var(--purple-dim);
-    gap: 1rem;
-  }
-  .nav-links.open { display: flex; }
+  .translate-btn { right: 5rem; }
+  .hamburger { right: 1.5rem; display: flex; }
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0; right: 0;
+  background: rgba(5,2,15,0.97);
+  padding: 0 2rem;
+  border-bottom: 1px solid var(--purple-dim);
+  gap: 1rem;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: max-height 0.55s ease, padding 0.55s ease, opacity 0.55s ease;
+}
+
+.nav-links.open {
+  max-height: 400px;
+  padding: 1rem 2rem;
+  opacity: 1;
+  pointer-events: all;
+}
   .nav-links a { font-size: 0.8rem; }
 }
