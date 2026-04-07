@@ -186,7 +186,7 @@ document.addEventListener("DOMContentLoaded", () => {
         <li>Trained multiple employees in food preperation, saftey protocols, and customer service standards.</li>`,
       "college.title": "COLLEGE",
       "college.degree": "B.S. IN COMPUTER SCIENCE",
-      "college.text": `<p>Graduated December 2024. Through active involvment in all three clubs, I worked alongside students from diverse backgrounds, gaining valuable experience in community engagement and strengthening my communication skills.</p>
+      "college.text": `<p>Graduated December 2024. Through active involvement in all three clubs, I worked alongside students from diverse backgrounds, gaining valuable experience in community engagement and strengthening my communication skills.</p>
         <p>Highlights: Working with a team of six alongside General Motors on a Public Policy Analytics capstone, where I integrated an AI based summarization engine capable of processing 100,000 word documents down to a 1-2 paragraph summary.</p>`,
       "contact.title": "CONTACT",
       "contact.text": `<span class="big">FEEL FREE <br>TO REACH OUT.</span> Open to full-time roles, internships, and part-time roles. Always looking forward to connecting.`,
