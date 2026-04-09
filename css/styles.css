@@ -82,8 +82,8 @@ nav {
   transform: translateY(-50%);
   z-index: 101;
   appearance: none;
-  border: 1px solid rgba(255,255,255,0.06);
-  background: linear-gradient(180deg, rgba(255,255,255,0.02), transparent);
+  border: 1px solid var(--purple-dim);
+  background: linear-gradient(180deg, rgba(185,79,255,0.08), transparent);
   color: #cfc3ff;
   padding: 0.45rem 0.9rem;
   border-radius: 8px;
@@ -92,7 +92,7 @@ nav {
   letter-spacing: 2px;
   cursor: pointer;
   transition: all 0.18s ease;
-  box-shadow: 0 0 8px rgba(185,79,255,0.06);
+  box-shadow: 0 0 8px rgba(185,79,255,0.2);
 }
 .translate-btn:hover {
   transform: translateY(-50%);
