@@ -172,22 +172,23 @@ document.addEventListener("DOMContentLoaded", () => {
       "proj.preview": "PREVIEW",
       "proj.portfolio.name": "Portfolio Website",
       "proj.portfolio.desc": "I built this portfolio from scratch using HTML, CSS, and JavaScript to showcase my frontend craftsmanship and document my growth. It's a place where I experiment with modern web design, responsive layouts, and interactive UI patterns while prioritizing accessibility and performance.",
-      "proj.gm.name": "PPA Project — General Motors",
-      "proj.gm.desc": "This project was developed by a team of six as part of a capstone course in partnership with General Motors. We built a full stack analytics platform that processed over 30 million public policy records and integrated an AI powered summarization engine to condense lengthy documents into clear short descriptions. Our work was later presented to 150+ GM EDI leaders and data engineers, where it received strong feedback for its innovation and practical value.",
+      "proj.gm.name": "General Motors SE Internship",
+      "proj.gm.desc": "During a Software Engineering internship at General Motors, collaborated with Data Analysts and Software Engineers in an Agile environment to build and deploy impactful solutions. Contributed to an internal GM repository actively used by current engineers. Deployed a deep learning model capable of summarizing documents up to 300,000 words into concise summaries, significantly increasing data analyst productivity.",
       "proj.nexus.name": "Newscape Nexus",
       "proj.nexus.desc": "This project was developed independently as a full stack RuneScape3 Grand Exchange tracker. Built with Angular and Express, it features a public market dashboard that processes live GE data, a backend caching layer for optimized API responses, and a production ready CI pipeline complete with health endpoints and structured JSON logging.",
       "skills.title": "SKILLS",
       "experience.title": "EXPERIENCE",
-      "exp.costco": `<li>Adapted quickly to surges, scaling prep and service processes to meet increased customer demand without sacrificing quality.</li>
-        <li>Managed time sensitive production under pressure, prioritizing tasks to keep the line moving during the busiest hours.</li>
-        <li>Managed high volume rotisserie production, preparing up to 80 chickens per shift while maintaining strict quality and timing standards.</li>`,
-      "exp.jimmy": `<li>Maintained positive customer relationships by demonstrating strong communication and problem solving skills during peak hours.</li>
-        <li>Optimized sandwich assembly proccess to ensure consistently quick order completions while maintaining quality standards.</li>
-        <li>Trained multiple employees in food preperation, saftey protocols, and customer service standards.</li>`,
+      "exp.gm": `<li>Contributed to an internal General Motors repository used by current engineers.</li>
+        <li>Collaborated with General Motors Data Analysts and Software Engineers following Agile methodology.</li>
+        <li>Deployed a deep learning model to summarize documents up to 300,000 words improving overall efficiency.</li>`,
+      "exp.costco": `<li>Led and mentored several teams of 3 to 6 employees to meet daily operational goals.</li>
+        <li>Drove warehouse sales performance by identifying gaps and implementing strategies to meet targets.</li>`,
+      "exp.jimmy": `<li>Trained multiple employees in food preperation, saftey protocols, and customer service standards.</li>
+        <li>Encouraged employees to promote  the rewards program resulting in a 40% growth in member enrollments.</li>
+        <li>Optimized sandwich assembly proccess to ensure consistently quick order completions while maintaining quality standards.</li>`,
       "college.title": "COLLEGE",
       "college.degree": "B.S. IN COMPUTER SCIENCE",
-      "college.text": `<p>Graduated December 2024. Through active involvement in all three clubs, I worked alongside students from diverse backgrounds, gaining valuable experience in community engagement and strengthening my communication skills.</p>
-        <p>Highlights: Working with a team of six alongside General Motors on a Public Policy Analytics capstone, where I integrated an AI based summarization engine capable of processing 100,000 word documents down to a 1-2 paragraph summary.</p>`,
+      "college.text": "Graduated December 2024. Through active involvement in all three clubs, I worked alongside students from diverse backgrounds, gaining valuable experience in community engagement and strengthening my communication skills",
       "contact.title": "CONTACT",
       "contact.text": `<span class="big">FEEL FREE <br>TO REACH OUT.</span> Open to full-time roles, internships, and part-time roles. Always looking forward to connecting.`,
       "footer.line1": "DESIGNED & BUILT BY REI PULLUM // 2026",
@@ -214,22 +215,23 @@ document.addEventListener("DOMContentLoaded", () => {
       "proj.preview": "プレビュー",
       "proj.portfolio.name": "Portfolio Website",
       "proj.portfolio.desc": "本ポートフォリオは、フロントエンドにおける技術力と自身の成長を形にするため、HTML、CSS、JavaScriptを用いて一から構築いたしました。アクセシビリティやパフォーマンスを最優先に考慮しつつ、モダンなウェブデザイン、レスポンシブレイアウト、そしてインタラクティブなUIパターンの探求を実践する場として活用しております。",
-      "proj.gm.name": "PPA Project — General Motors",
-      "proj.gm.desc": "本プロジェクトは、ゼネラルモーターズ（GM）社との提携によるキャップストーン・プログラムの一環として、6名のチームで開発いたしました。3,000万件以上の公的政策データを処理するフルスタックの分析プラットフォームを構築し、AIを活用した要約エンジンを統合することで、膨大な文書を簡潔で明快な記述に凝縮する機能を実装いたしました。本成果は、GM社のEDIリーダーやデータエンジニアを含む150名以上の前で発表を行い、その革新性と実用性において高い評価をいただきました。",
+      "proj.gm.name": "General Motors SE Internship",
+      "proj.gm.desc": "ゼネラルモーターズでのソフトウェアエンジニアリングインターンシップ中、アジャイル環境においてデータアナリストおよびソフトウェアエンジニアと協力し、インパクトのあるソリューションの構築と展開に取り組みました。現在のエンジニアに活用されているGMの社内リポジトリに貢献しました。300,000語までの文書を簡潔な要約に圧縮できるディープラーニングモデルを展開し、データアナリストの生産性を大幅に向上させました。",
       "proj.nexus.name": "Newscape Nexus",
       "proj.nexus.desc": "本プロジェクトは、RuneScape3のグランドエクスチェンジを追跡するフルスタックトラッカーとして独自に開発いたしました。AngularとExpressを用いて構築し、リアルタイムGEデータを処理する公開マーケットダッシュボード、APIレスポンスを最適化するバックエンドキャッシュ層、ヘルスエンドポイントと構造化JSONログを備えた本番対応のCIパイプラインを実装しております。",
       "skills.title": "スキル",
       "experience.title": "経験",
-      "exp.costco": `<li>需要の急増に迅速に対応し、準備およびサービス工程を効率的にスケールさせることで、品質を維持しつつ業務を完遂いたしました。</li>
-        <li>時間制約のある生産業務をプレッシャー下で管理し、繁忙期においても優先順位を的確に判断してラインの稼働を維持いたしました。</li>
-        <li>高ボリュームのロティサリー調理を管理し、1シフトあたり最大80羽の調理を厳格な品質基準と時間制限のもとで担当いたしました。</li>`,
-      "exp.jimmy": `<li>ピーク時においても、的確なコミュニケーションと問題解決能力を発揮し、良好な顧客関係の維持に努めました。</li>
-        <li>サンドイッチの調理工程を最適化し、迅速な提供と品質維持を両立させる仕組みを構築いたしました。</li>
-        <li>複数の従業員に対し、食材準備、安全プロトコル、および接客基準に関するトレーニングを担当いたしました。</li>`,
+      "exp.gm": `<li>現在のエンジニアに使用されているゼネラルモーターズの社内リポジトリに貢献しました。</li>
+        <li>ゼネラルモーターズのデータアナリストおよびソフトウェアエンジニアとアジャイル手法に従い協力しました。</li>
+        <li>300,000語までの文書を要約するディープラーニングモデルを展開し、全体的な効率を向上させました。</li>`,
+      "exp.costco": `<li>3〜6名の複数チームを率いて指導し、日々の業務目標を達成しました。</li>
+        <li>倉庫の販売実績を向上させるため、課題を特定し目標達成のための戦略を実施しました。</li>`,
+      "exp.jimmy": `<li>複数の従業員に食品の調理、安全プロトコル、および顧客サービス基準についてトレーニングを行いました。</li>
+        <li>従業員に報酬プログラムの促進を奨励し、会員登録数が40%増加しました。</li>
+        <li>サンドイッチの組み立てプロセスを最適化し、品質基準を維持しながら一貫して迅速な注文完了を確保しました。</li>`,
       "college.title": "大学",
       "college.degree": "コンピュータサイエンス学士",
-      "college.text": `<p>2024年12月に卒業しました。3つのクラブ活動を通じて、多様なバックグラウンドの学生と協働し、コミュニティ活動やコミュニケーション能力を磨きました。</p>
-        <p>ハイライト：General Motors と共同で取り組んだ Public Policy Analytics のキャップストーンで、AIベースの要約エンジンを統合し、長文ドキュメントを1〜2段落に凝縮する仕組みを実装しました。</p>`,
+      "college.text": `<p>2024年12月に卒業しました。3つのクラブ活動を通じて、多様なバックグラウンドの学生と協働し、コミュニティ活動やコミュニケーション能力を磨きました。</p>`,
       "contact.title": "お問い合わせ",
       "contact.text": `<span class="big">いつでもお気軽にお問い合わせください。</span> 私は現在、正社員、インターンシップ、ならびにパートタイムでの機会を幅広く探しております。皆様との新たなつながりを持てることを、心より楽しみにしております。`,
       "footer.line1": "DESIGNED & BUILT BY REI PULLUM // 2026",
