@@ -241,12 +241,10 @@ document.addEventListener("DOMContentLoaded", () => {
   function setLanguage(lang) {
     localStorage.setItem("site_lang", lang);
     history.replaceState(null, '', '?lang=' + lang);
-
     if (kanjiBg) {
       kanjiBg.innerHTML = '';
       for (let i = 0; i < 4; i++) spawnKanji();
     }
-
     document.querySelectorAll("[data-dict]").forEach((node) => {
       const key = node.getAttribute("data-dict");
       const val = dict[lang] && dict[lang][key];
@@ -266,12 +264,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const urlLang = new URLSearchParams(window.location.search).get('lang');
   const validLangs = ["en", "ja"];
-
   if (urlLang && !validLangs.includes(urlLang)) {
     const fallback = localStorage.getItem("site_lang") || "en";
     history.replaceState(null, '', '?lang=' + fallback);
   }
-
   const savedLang =
     (validLangs.includes(urlLang) ? urlLang : null) ||
     localStorage.getItem("site_lang") ||
@@ -287,57 +283,103 @@ const urlLang = new URLSearchParams(window.location.search).get('lang');
     });
   }
 
-  // Create modal and append to body
+  let galleryImages = [];
+  let galleryIndex = 0;
+
   let previewModal = document.getElementById("preview-modal");
   if (!previewModal) {
     previewModal = document.createElement("div");
     previewModal.id = "preview-modal";
     previewModal.innerHTML = `
-      <div class="modal-inner" role="dialog" aria-modal="true">
-        <button class="modal-close" aria-label="Close preview">BACK</button>
+      <button class="modal-close" aria-label="Close preview">✕</button>
+      <button class="modal-arrow modal-prev" aria-label="Previous image">&#8249;</button>
+      <div class="modal-center">
         <img src="" alt="Preview image" />
+        <div class="modal-indicator"></div>
       </div>
+      <button class="modal-arrow modal-next" aria-label="Next image">&#8250;</button>
     `;
     document.body.appendChild(previewModal);
   }
 
-  const modalImg = previewModal.querySelector("img");
+function updateModalImage() {
+  const img = previewModal.querySelector("img");
+  const prevBtn = previewModal.querySelector(".modal-prev");
+  const nextBtn = previewModal.querySelector(".modal-next");
+  const indicator = previewModal.querySelector(".modal-indicator");
 
-  function openPreviewModal(url, alt = "Preview image") {
-    if (!modalImg) return;
-    modalImg.src = url;
-    modalImg.alt = alt;
+  if (img) {
+    img.style.opacity = "0";
+    img.src = galleryImages[galleryIndex];
+    img.onload = () => { img.style.opacity = "1"; };
+  }
+
+  const multi = galleryImages.length > 1;
+  if (prevBtn) prevBtn.style.visibility = multi ? "visible" : "hidden";
+  if (nextBtn) nextBtn.style.visibility = multi ? "visible" : "hidden";
+
+  if (indicator) {
+    // clear existing nodes and recreate as buttons so clicks work reliably
+    indicator.innerHTML = '';
+    galleryImages.forEach((_, i) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'modal-dot' + (i === galleryIndex ? ' active' : '');
+      btn.setAttribute('aria-label', `Go to image ${i + 1}`);
+      btn.dataset.index = i;
+      // click handler navigates to that image
+      btn.addEventListener('click', (ev) => {
+        ev.stopPropagation();
+        const idx = Number(ev.currentTarget.dataset.index);
+        if (!Number.isNaN(idx)) {
+          galleryIndex = idx;
+          updateModalImage();
+        }
+      });
+      indicator.appendChild(btn);
+    });
+  }
+}
+
+  function openPreviewModal(images, startIndex = 0) {
+    galleryImages = Array.isArray(images) ? images : [images];
+    galleryIndex = startIndex;
+    updateModalImage();
     previewModal.classList.add("show");
     document.body.style.overflow = "hidden";
   }
 
   function closePreviewModal() {
     previewModal.classList.remove("show");
-    if (modalImg) modalImg.src = "";
+    const img = previewModal.querySelector("img");
+    if (img) img.src = "";
     document.body.style.overflow = "";
   }
 
   document.addEventListener("click", (e) => {
     const previewBtn = e.target.closest(".preview-btn");
     if (previewBtn) {
-      const full = previewBtn.dataset.full;
-      if (full) openPreviewModal(full);
+      const galleryAttr = previewBtn.dataset.gallery;
+      const fullAttr = previewBtn.dataset.full;
+      if (galleryAttr) {
+        try { openPreviewModal(JSON.parse(galleryAttr), 0); } catch { if (fullAttr) openPreviewModal([fullAttr], 0); }
+      } else if (fullAttr) {
+        openPreviewModal([fullAttr], 0);
+      }
       return;
     }
-    if (e.target.closest(".modal-close")) {
-      closePreviewModal();
-      return;
-    }
-  });
-
-  previewModal.addEventListener("click", (e) => {
-    if (e.target === previewModal) closePreviewModal();
+    if (e.target.closest(".modal-close") || e.target === previewModal) { closePreviewModal(); return; }
+    if (e.target.closest(".modal-prev")) { galleryIndex = (galleryIndex - 1 + galleryImages.length) % galleryImages.length; updateModalImage(); return; }
+    if (e.target.closest(".modal-next")) { galleryIndex = (galleryIndex + 1) % galleryImages.length; updateModalImage(); return; }
   });
 
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape" && previewModal.classList.contains("show"))
-      closePreviewModal();
+    if (!previewModal.classList.contains("show")) return;
+    if (e.key === "Escape") { closePreviewModal(); return; }
+    if (e.key === "ArrowLeft") { galleryIndex = (galleryIndex - 1 + galleryImages.length) % galleryImages.length; updateModalImage(); }
+    if (e.key === "ArrowRight") { galleryIndex = (galleryIndex + 1) % galleryImages.length; updateModalImage(); }
   });
+  // ─────────────────────────────────────────────────────────────────────────────
 
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");

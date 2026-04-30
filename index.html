@@ -5,21 +5,15 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Rei's Portfolio Website</title>
-
-  <!-- External CSS Reference -->
   <link rel="stylesheet" href="css/styles.css" />
-
-  <!-- Google Font Reference -->
   <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Noto+Sans+JP:wght@300;400;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
 
 <div id="cursor-glow"></div>
 <canvas id="rain"></canvas>
 <div class="kanji-bg" id="kanji-bg"></div>
 
-<!-- City SVG Reference -->
 <svg id="city" viewBox="0 0 1440 320" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax slice">
   <defs>
     <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
@@ -27,8 +21,6 @@
       <stop offset="100%" stop-color="#05020f" stop-opacity="0"/>
     </linearGradient>
   </defs>
-
-  <!-- Buildings Reference -->
   <rect x="0" y="180" width="60" height="140" fill="url(#cg)"/>
   <rect x="20" y="140" width="25" height="180" fill="url(#cg)"/>
   <rect x="70" y="200" width="80" height="120" fill="url(#cg)"/>
@@ -56,8 +48,6 @@
   <rect x="1230" y="165" width="85" height="155" fill="url(#cg)"/>
   <rect x="1320" y="150" width="60" height="170" fill="url(#cg)"/>
   <rect x="1385" y="175" width="55" height="145" fill="url(#cg)"/>
-
-  <!-- Neon Windows Reference -->
   <rect x="178" y="130" width="5" height="5" fill="#00f5ff" opacity="0.8"/>
   <rect x="165" y="115" width="5" height="5" fill="#b94fff" opacity="0.9"/>
   <rect x="313" y="125" width="5" height="5" fill="#b94fff" opacity="0.9"/>
@@ -68,7 +58,6 @@
   <rect x="1253" y="140" width="5" height="5" fill="#b94fff" opacity="0.9"/>
 </svg>
 
-<!-- Navigation Bar -->
 <nav>
   <div class="nav-logo">JONATHAN<span> </span>REI<span> </span>PULLUM</div>
   <div class="nav-links" id="nav-links">
@@ -84,13 +73,11 @@
   <span class="bar bar2"></span>
   <span class="bar bar3"></span>
   </button>
-  <!-- Translate Button -->
   <button id="translate-btn" class="translate-btn" aria-label="Toggle language">日本語</button>
 </nav>
 
 <main>
 
-  <!-- Hero Section -->
   <section id="hero">
     <h1 class="hero-name" style="color: var(--cyan); text-shadow: var(--glow-cyan);">JONATHAN</h1>
     <h1 class="hero-name"><span class="accent">REI</span><br>PULLUM</h1>
@@ -105,7 +92,6 @@
     </div>
   </section>
 
-  <!-- About Section -->
   <section id="about">
     <div class="section-header">
       <span class="section-num">01 ／</span>
@@ -124,7 +110,6 @@
   </div>
   </section>
 
-  <!-- Projects Section -->
   <section id="projects">
     <div class="section-header">
       <span class="section-num">02 ／</span>
@@ -156,7 +141,8 @@
         <div class="proj-top">
           <div class="proj-icon" aria-hidden="true">🏛️</div>
           <div class="proj-links">
-            <button class="code-btn preview-btn" data-full="assets/images/PPAHomePage.png" aria-label="Preview PPA screenshot" data-dict="proj.preview">
+            <button class="code-btn preview-btn" data-gallery=
+            '["assets/images/AISum.png","assets/images/VotingMap.png","assets/images/VotingSum.png"]' aria-label="Preview PPA screenshot" data-dict="proj.preview">
               PREVIEW
             </button>
           </div>
@@ -188,7 +174,6 @@
     </div>
   </section>
 
-  <!-- Skills Section -->
   <section id="skills">
     <div class="section-header">
       <span class="section-num">03 ／</span>
@@ -223,16 +208,13 @@
     </div>
   </section>
 
-  <!-- Experience Section -->
   <section id="experience">
     <div class="section-header">
       <span class="section-num">04 ／</span>
       <h2 class="section-title" data-dict="experience.title">EXPERIENCE</h2>
       <div class="section-line"></div>
     </div>
-
     <div class="timeline">
-      <!-- General Motors section -->
       <div class="tl-item">
         <div class="tl-dot"></div>
         <div class="tl-date">2024 — 2024</div>
@@ -240,8 +222,6 @@
         <div class="tl-role">SOFTWARE ENGINEERING INTERN</div>
         <ul class="tl-desc" data-dict="exp.gm"></ul>
       </div>
-
-      <!-- Costco section -->
       <div class="tl-item">
         <div class="tl-dot"></div>
         <div class="tl-date">2025 — 2026</div>
@@ -249,8 +229,6 @@
         <div class="tl-role">AREA MANAGER</div>
         <ul class="tl-desc" data-dict="exp.costco"></ul>
       </div>
-
-      <!-- J.J. section -->
       <div class="tl-item">
         <div class="tl-dot"></div>
         <div class="tl-date">2023 — 2024</div>
@@ -258,18 +236,15 @@
         <div class="tl-role">MANAGER</div>
         <ul class="tl-desc" data-dict="exp.jimmy"></ul>
       </div>
-
     </div>
   </section>
 
-  <!-- College Section -->
   <section id="college">
     <div class="section-header">
       <span class="section-num">05 ／</span>
       <h2 class="section-title" data-dict="college.title"></h2>
       <div class="section-line"></div>
     </div>
-
 <div class="timeline">
   <div class="tl-item">
     <div class="tl-dot"></div>
@@ -290,24 +265,19 @@
     </div>
   </section>
 
-  <!-- Contact Section -->
   <section id="contact">
     <div class="section-header">
       <span class="section-num">06 ／</span>
       <h2 class="section-title" data-dict="contact.title">CONTACT</h2>
       <div class="section-line"></div>
     </div>
-
     <div class="contact-wrapper">
       <div class="contact-text" data-dict="contact.text"></div>
-
       <div class="contact-links">
         <a href="mailto:rei@pullum.com" class="contact-link"><span class="cl-icon">✉</span> rei@pullum.com</a>
-
         <a href="https://github.com/reipullum" class="contact-link" target="_blank" rel="noopener noreferrer">
           <span class="cl-icon">⬡</span> github.com/reipullum
         </a>
-
         <a href="https://www.linkedin.com/in/jonathan-pullum-105269221/" class="contact-link" target="_blank" rel="noopener noreferrer">
           <span class="cl-icon">◈</span> linkedin.com/in/reipullum
         </a>
