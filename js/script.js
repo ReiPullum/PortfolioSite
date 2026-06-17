@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
       "proj.code": "CODE",
       "proj.preview": "PREVIEW",
       "proj.portfolio.name": "Portfolio Website",
-      "proj.portfolio.desc": "I built this portfolio from scratch using HTML, CSS, and JavaScript to showcase my frontend craftsmanship and document my growth. It's a place where I experiment with modern web design, responsive layouts, and interactive UI patterns while prioritizing accessibility and performance.",
+      "proj.portfolio.desc": "I built this portfolio from scratch using HTML, CSS, and JavaScript to showcase my frontend skills and document my growth. It's a project where I can experiment with web design and interactive UI while prioritizing a user friendly layout.",
       "proj.gm.name": "General Motors SE Internship",
       "proj.gm.desc": "During a Software Engineering internship at General Motors, collaborated with Data Analysts and Software Engineers in an Agile environment to build and deploy impactful solutions. Contributed to an internal GM repository actively used by current engineers. Deployed a deep learning model capable of summarizing documents up to 300,000 words into concise summaries, significantly increasing data analyst productivity.",
       "proj.nexus.name": "Newscape Nexus",
